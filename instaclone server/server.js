@@ -25,7 +25,7 @@ const mongo_post_datails = require("./Schemas/Postschema");
 const { response } = require("express");
 const res = require("express/lib/response");
 mongoose.connect(
-  "Process.env.Mongo_URL",
+  Process.env.Mongo_URL,
   function (error) {
     console.log(error);
   }

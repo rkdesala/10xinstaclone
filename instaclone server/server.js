@@ -25,7 +25,7 @@ const mongo_post_datails = require("./Schemas/Postschema");
 const { response } = require("express");
 const res = require("express/lib/response");
 mongoose.connect(
-  "mongodb+srv://ramakrishnadesala95:9912161657Ra@instaclone.vlb5x.mongodb.net/?retryWrites=true&w=majority",
+  "Process.env.Mongo_URL",
   function (error) {
     console.log(error);
   }
